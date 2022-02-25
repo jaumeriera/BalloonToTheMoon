@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallingMovement : MonoBehaviour
+public class FallingMovement : PoolableObject
 {
     [SerializeField] FallingScriptable _falling;
     void Update()

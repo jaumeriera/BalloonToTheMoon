@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: PlayerScriptable
   m_EditorClassIdentifier: 
   speed: 9
+  bounceSpeed: 3.5
