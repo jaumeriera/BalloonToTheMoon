@@ -20,6 +20,8 @@ public class ObjectPool : MonoBehaviour
         {
             CreateElement();
         }
+
+        Shuffle();
     }
 
     private PoolableObject CreateElement()
@@ -29,6 +31,24 @@ public class ObjectPool : MonoBehaviour
         element.gameObject.SetActive(false);
         // pool.Add(element); // poolableObjects are added ondisable
         return element;
+    }
+
+    private void Shuffle()
+    {
+        List<PoolableObject> newPool = new List<PoolableObject>(pool.Count);
+        List<int> newIndex = new List<int>(pool.Count);
+        int idx;
+
+        for (int i = 0; i < pool.Count; i++)
+        {
+            do
+            {
+                idx = UnityEngine.Random.Range(0, pool.Count);
+            } while (newIndex.Contains(idx));
+            newIndex.Add(idx);
+            newPool.Add(pool[idx]);
+        }
+        pool = newPool;
     }
 
     public void addToPool(PoolableObject element)

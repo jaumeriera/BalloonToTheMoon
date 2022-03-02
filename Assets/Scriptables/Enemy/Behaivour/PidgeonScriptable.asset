@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5c54c761a959cc45a40945ada07be8e, type: 3}
-  m_Name: Enemy1FallingScriptable
+  m_Script: {fileID: 11500000, guid: 91a7be21555295d43b8de95169c253ec, type: 3}
+  m_Name: PidgeonScriptable
   m_EditorClassIdentifier: 
-  speed: 3
+  minDistanceX: 1
+  maxDistanceX: 3
+  lateralSpeed: 1.5
+  waitingTime: 1

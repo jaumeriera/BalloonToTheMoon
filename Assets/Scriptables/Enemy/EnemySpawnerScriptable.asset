@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e0ec3bf7f902a409fcb7b6f0ffb433, type: 3}
+  m_Name: EnemySpawnerScriptable
+  m_EditorClassIdentifier: 
+  maxSideSpawnAtTime: 4
+  minSideXOffset: -2
+  maxSideXOffset: 2
+  minCenterXOffset: -5
+  maxCenterXOffset: 5
+  minTime: 0.01
+  decrementTime: 0.05
+  initialTime: 3
