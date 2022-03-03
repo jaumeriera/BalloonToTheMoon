@@ -103,9 +103,6 @@ public class EnemySpawnerManager : MonoBehaviour
         ObjectPool spawnerPool = pools[spawnerIndex];
         BaseEnemy enemy = (BaseEnemy)spawnerPool.GetNext();
         enemy.gameObject.transform.position = spawnAt.position + GetTransformOffset(enemy.type);
-        print("Added");
-        print(spawnAt.position);
-        print(GetTransformOffset(enemy.type));
         enemy.gameObject.SetActive(true);
     }
 

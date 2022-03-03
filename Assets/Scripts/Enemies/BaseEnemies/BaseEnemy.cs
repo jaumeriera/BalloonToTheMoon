@@ -19,10 +19,17 @@ public class BaseEnemy : FallingMovement
         {
             EnemySpawnerManager.spawnedInSide -= 1;
         }
+        base.OnDisable();
     }
+
     private bool IsSideEnemy()
     {
         return type == BaseEnemy.enemyType.side;
+    }
+
+    private void OnEnable()
+    {
+        EnemySpawnerManager.spawnedInSide += 1;
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
